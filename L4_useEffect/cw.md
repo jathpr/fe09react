@@ -3,10 +3,6 @@
 https://ru.reactjs.org/docs/introducing-jsx.html
 https://ru.reactjs.org/docs/jsx-in-depth.html
 
-### Conditional render
-
-https://ru.reactjs.org/docs/conditional-rendering.html
-
 ### LifeCycle
 
 https://ru.reactjs.org/docs/state-and-lifecycle.html

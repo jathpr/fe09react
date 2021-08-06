@@ -6,4 +6,4 @@
 5. Redux
 6. Redux+thunk
 7. tests+ts
-8. storybook, ionic, etc  
+8. storybook, ionic, etc, react-query
