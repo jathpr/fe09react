@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { addTodo } from "../Requests";
+import Button from "@material-ui/core/Button";
 
 export const AddItem = ({ updateDetector }) => {
   const [item, setItem] = useState("");
@@ -16,7 +17,9 @@ export const AddItem = ({ updateDetector }) => {
   return (
     <div>
       <input type="text" value={item} onChange={handleInput} />
-      <button onClick={handleAdd}> Add</button>
+      <Button color="primary" variant="contained" onClick={handleAdd}>
+        Add
+      </Button>
     </div>
   );
 };
