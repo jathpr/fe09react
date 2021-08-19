@@ -1,6 +1,6 @@
-export const Counter = () => {
-  const [value, changeValue] = useReducer(reducer, {0});
+import { useCounterContext } from "./useCounter";
 
-  
-  return <div>Counter</div>;
+export const Counter = () => {
+  const { counter } = useCounterContext();
+  return <div>Counter {counter}</div>;
 };
