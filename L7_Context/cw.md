@@ -1,7 +1,8 @@
 debug
+useContext
 
 memo
-render (оптимизации)
-custom hook
+useMemo
+useCallback
 useRef применение
-свой redux(flux)
+useReducer (знакомство)
