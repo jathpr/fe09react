@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { AddItem } from "./Components/AddItem";
 import { TodoList } from "./Components/TodoList";
 import { getTodos } from "./Requests";
@@ -16,9 +16,9 @@ export const ToDo = () => {
     updateList();
   }, [detector]);
 
-  const updateDetector = () => {
+  const updateDetector = useCallback(() => {
     setDetector({});
-  };
+  }, []);
 
   return (
     <>

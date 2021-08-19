@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { format, formatDistance, formatRelative, subDays } from "date-fns";
+import { format } from "date-fns";
 
 export class Clock extends Component {
   constructor(props) {
@@ -33,7 +33,7 @@ export class Clock extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handle}>Hello</button>
+        <button onClick={(e) => e.preventDefault}>Hello</button>
         <h1>Привет, мир!</h1>
         <h2>Сейчас {format(this.state.date, "'Today is a' eeee")}.</h2>
       </div>
