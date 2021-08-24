@@ -1,9 +1,11 @@
 8 недель
-1. ui+utils+styled + HOC?
-2. routing + custom hooks (callback, memo) + HOC?
+1. ui+utils+styled 
+2. routing + custom hooks (callback, memo)
 3. context+reducers (refs?), stateManagement 
-4. firebase? a11y?
+4. firebase? a11y???
 5. Redux
 6. Redux+thunk
 7. tests+ts
 8. storybook, ionic, etc, react-query
+
+HOC
