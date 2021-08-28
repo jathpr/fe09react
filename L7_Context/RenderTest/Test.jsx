@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { useSetValue, useValue } from "./Provider";
+import { useValue } from "./Provider";
 
 export const Test = ({ name }) => {
   const [inputVal, setInputVal] = useState("");
-  // useValue();
-  useSetValue();
+  useValue();
   return (
     <div style={{ margin: "10px" }}>
       <input
