@@ -2,8 +2,8 @@ debug
 useContext
 
 memo
-useMemo
-useCallback
+useMemo https://blog.logrocket.com/rethinking-hooks-memoization/ статьи предостережения
+useCallback https://kentcdodds.com/blog/usememo-and-usecallback
 useRef применение
 useReducer (знакомство)
 
