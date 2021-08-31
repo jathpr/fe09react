@@ -3,7 +3,7 @@ import { FirstComponentShow } from "./FirstComponentShow";
 
 const mapStateToProps = (state) => {
   return {
-    counter: state.counter,
+    counter: state.counter.counter,
   };
 };
 
