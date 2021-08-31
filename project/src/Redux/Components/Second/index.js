@@ -1,4 +1,4 @@
-import { SecondComponent } from "./Second";
+import { SecondComponent } from "./SecondComponent";
 import { connect } from "react-redux";
 
 const mapStateToProps = (state) => {

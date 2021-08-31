@@ -1,6 +1,6 @@
 ### Dependencies
 
-`yarn add react-redux redux`  
+`yarn add react-redux @reduxjs/toolkit`  
 `yarn add redux-devtools-extension -D`
 
 ### Store
