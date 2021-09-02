@@ -1,9 +1,7 @@
-import { connect } from "react-redux";
+import { useDispatch } from "react-redux";
 
-const ChangeComponent = ({ change }) => {
+export const Change = () => {
+  const dispatch = useDispatch();
+  const change = () => dispatch({ type: "Hello" });
   return <button onClick={change}>change</button>;
 };
-
-export const Change = connect(null, (dispatch) => ({
-  change: () => dispatch({ type: "Hello" }),
-}))(ChangeComponent);
