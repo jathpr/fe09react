@@ -1,5 +1,4 @@
 import { connect } from "react-redux";
-
-const DisplayComponent = ({ value }) => <div>{value}</div>;
+import { DisplayComponent } from "./DisplayComponent";
 
 export const Display = connect((store) => store)(DisplayComponent);
