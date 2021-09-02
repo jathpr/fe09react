@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
-import { App } from "./Redux/Components/App";
+import { App } from "./ReduxSimplest/App";
+// import { App } from "./Redux/Components/App";
 
 ReactDOM.render(
   <StrictMode>
