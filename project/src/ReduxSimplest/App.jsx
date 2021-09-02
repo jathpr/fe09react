@@ -1,9 +1,6 @@
 import { Provider } from "react-redux";
 import { Display } from "./Display";
-
-import { createStore } from "redux";
-
-const store = createStore(() => "world");
+import { store } from "./store/oneFileStore";
 
 export const App = () => (
   <Provider store={store}>
