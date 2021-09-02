@@ -1,3 +1,12 @@
+import { Provider } from "react-redux";
 import { Display } from "./Display";
 
-export const App = () => <Display value="Hello" />;
+import { createStore } from "redux";
+
+const store = createStore(() => "world");
+
+export const App = () => (
+  <Provider store={store}>
+    <Display />
+  </Provider>
+);
