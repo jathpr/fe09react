@@ -1,9 +1,10 @@
 import { createStore } from "redux";
+import { hello } from "./actionTypes";
 
 const initialState = { value: "world" };
 
 const reducer = (state = initialState, action) => {
-  if (action.type === "Hello") return { value: "Hello world" };
+  if (action.type === hello) return { value: "Hello world" };
   return state;
 };
 
