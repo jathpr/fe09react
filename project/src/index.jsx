@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
-import { App } from "./Thunk/src/components/App";
+import { App } from "./Thunk_Tools/src/components/App";
 
 ReactDOM.render(
   <StrictMode>
