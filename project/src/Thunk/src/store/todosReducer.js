@@ -1,4 +1,10 @@
-import { ADD_TODO, SET_TODOS, GET_TODOS, CHECK_TODO } from "./actionTypes";
+import {
+  ADD_TODO,
+  SET_TODOS,
+  GET_TODOS,
+  CHECK_TODO,
+  DELETE_TODO,
+} from "./actionTypes";
 
 const State = {
   initial: 0,
@@ -17,6 +23,11 @@ export const todos = (state = initialState, action) => {
       return { ...state, list: action.todos, loadingState: State.loaded };
     case ADD_TODO:
       return { ...state, list: [...state.list, action.todo] };
+    case DELETE_TODO:
+      return {
+        ...state,
+        list: state.list.filter((item) => item.id !== action.id),
+      };
     case GET_TODOS:
       return { ...state, loadingState: State.loading };
     case CHECK_TODO:

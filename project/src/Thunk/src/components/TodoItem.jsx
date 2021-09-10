@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./todoItem.module.css";
 
-export const TodoItem = ({ text, done, checkTodo }) => (
+export const TodoItem = ({ text, done, checkTodo, deleteTodo }) => (
   <li className={styles.container}>
     <input
       type="checkbox"
@@ -10,6 +10,7 @@ export const TodoItem = ({ text, done, checkTodo }) => (
         checkTodo();
       }}
     />
+    <button onClick={deleteTodo}>Delete</button>
     <h1>{text}</h1>
   </li>
 );

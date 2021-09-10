@@ -1,5 +1,5 @@
 import { connect } from "react-redux";
-import { addTodo, getTodos, checkTodo } from "../../store/todosActionCreators";
+import { addTodo, getTodos } from "../../store/todosActionCreators";
 import { TodoComponent } from "./TodoComponent";
 
 const mapStateToProps = (state) => ({
@@ -9,7 +9,6 @@ const mapStateToProps = (state) => ({
 const actionCreators = {
   addTodo,
   getTodos,
-  checkTodo,
 };
 
 export const Todo = connect(mapStateToProps, actionCreators)(TodoComponent);

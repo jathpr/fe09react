@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { TodoList } from "../../components/TodoList";
 import { AddTodo } from "../../components/AddTodo";
 
-export const TodoComponent = ({ todos, addTodo, getTodos, checkTodo }) => {
+export const TodoComponent = ({ todos, addTodo, getTodos }) => {
   useEffect(() => {
     getTodos();
   }, []);
@@ -10,7 +10,7 @@ export const TodoComponent = ({ todos, addTodo, getTodos, checkTodo }) => {
   return (
     <>
       <header>ToDo List</header>
-      <TodoList todos={todos} checkTodo={checkTodo} />
+      <TodoList todos={todos} />
       <AddTodo addTodo={addTodo} />
     </>
   );

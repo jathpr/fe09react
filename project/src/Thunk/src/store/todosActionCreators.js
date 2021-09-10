@@ -13,6 +13,20 @@ export const addTodo = (todo) => async (dispatch) => {
 
   dispatch({ type: types.ADD_TODO, todo: data });
 };
+
+export const deleteTodo =
+  ({ id }) =>
+  async (dispatch) => {
+    const todoUrl = new URL(`http://localhost:3033/todos/${id}`);
+    const response = await fetch(todoUrl, {
+      method: "DELETE",
+    });
+    if (response.ok) dispatch({ type: types.DELETE_TODO, id });
+    else {
+      alert("Something go wrong");
+    }
+  };
+
 export const getTodos = () => async (dispatch) => {
   dispatch(getTodosStarted());
 
@@ -43,5 +57,5 @@ export const checkTodo = (todo) => async (dispatch) => {
   dispatch({ type: types.CHECK_TODO, todo: data });
 };
 
-const setTodos = (todos) => ({ type: types.SET_TODOS, todos });
-const getTodosStarted = () => ({ type: types.GET_TODOS });
+export const setTodos = (todos) => ({ type: types.SET_TODOS, todos });
+export const getTodosStarted = () => ({ type: types.GET_TODOS });
