@@ -1,6 +1,7 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom";
-import { App } from "./Thunk/src/components/App";
+import { App } from "./FBStorage/App";
+import "./fb";
 
 ReactDOM.render(
   <StrictMode>
