@@ -1,14 +1,13 @@
-import { collection, addDoc, getDocs } from "firebase/firestore";
+import { collection, setDoc, getDocs, doc } from "firebase/firestore";
 import { db } from "../fb";
 
 export const send = async () => {
   try {
-    const docRef = await addDoc(collection(db, "users"), {
+    await setDoc(doc(db, "users", "ada_id"), {
       first: "Ada",
       last: "Lovelace",
       born: 1815,
     });
-    console.log("Document written with ID: ", docRef.id);
   } catch (e) {
     console.error("Error adding document: ", e);
   }
